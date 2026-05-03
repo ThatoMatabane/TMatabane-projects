@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thato Matabane - Profile</title>
+
+   
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+<nav>
+    <a href="profile.html" style="color:#00bcd4;">Home</a>
+    <a href="about.html">About</a>
+    <a href="experience.html">Work Experience</a>
+    <a href="projects.html">Projects</a>
+</nav>
+
+
+<div class="container">
+
+    
+    <div class="hero">
+        <img src="images/myimg.jpg" alt="Thato Matabane">
+
+        <h1>Thato Matabane</h1>
+        <h2 id="typing"></h2>
+
+        <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+
+        <p class="contact">
+            📍 Pretoria, Wonderboom South <br>
+            📞 076 042 4904 / 079 404 3777 <br>
+            📧 tmatabane1804@gmail.com
+        </p>
+    </div>
+
+    
+    <div class="section">
+        <h2>Profile</h2>
+        <p>
+            I am a motivated Software Development student with a strong foundation in building 
+            real-world applications using modern programming languages. I am passionate about 
+            solving problems, learning new technologies, and developing efficient, scalable systems.
+        </p>
+        <p>
+            I bring a combination of technical knowledge and practical experience, along with 
+            strong communication and teamwork skills developed in professional environments.
+        </p>
+    </div>
+
+    
+    <div class="section">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Programming: HTML, CSS, JavaScript, Java, C#, SQL</li>
+            <li>Frameworks: MVC, WPF, Console Applications</li>
+            <li>Databases: MySQL, SQL</li>
+            <li>Tools: VS Code, NetBeans</li>
+            <li>Version Control: Git, GitHub</li>
+            <li>Concepts: OOP, Debugging, Data Structures</li>
+        </ul>
+    </div>
+
+    
+    <div class="section">
+        <h2>Education</h2>
+        <p>
+            <strong>IIE Rosebank College</strong><br>
+            IIE Diploma in Information Communication Technology in Software Development (2024 – 2026)
+        </p>
+
+        <p>
+            <strong>Northern Academy Secondary</strong><br>
+            National Senior Certificate (2023)
+        </p>
+    </div>
+
+   
+    <div class="section">
+        <h2>Languages</h2>
+        <ul>
+            <li>English</li>
+            <li>Sepedi</li>
+            <li>Afrikaans</li>
+            <li>IsiZulu</li>
+        </ul>
+    </div>
+
+    
+    <div class="section">
+        <h2>Other</h2>
+        <p>Code 10 Driver’s License</p>
+    </div>
+
+</div>
+
+
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark");
+}
+
+const text = "Aspiring Software Developer";
+let i = 0;
+
+function typingEffect() {
+    const el = document.getElementById("typing");
+    el.innerHTML = ""; // reset
+    type();
+}
+
+function type() {
+    if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(type, 80);
+    }
+}
+
+window.addEventListener("load", () => {
+    i = 0;
+    typingEffect();
+});
+</script>
+
+</body>
+</html>
