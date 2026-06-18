@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastimes Online Store - Presentation Report</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media print {
+            .no-print { display: none; }
+            body { padding: 0; background: white; }
+            .page-break { page-break-after: always; }
+        }
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 py-12 px-6">
+
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden border border-gray-100">
+        <!-- Cover Page -->
+        <div class="bg-indigo-900 p-16 text-white text-center space-y-6">
+            <div class="inline-flex items-center justify-center w-20 h-20 bg-white/10 rounded-2xl mb-4 backdrop-blur-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-indigo-400"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            </div>
+            <h1 class="text-5xl font-black tracking-tighter">PASTIMES</h1>
+            <p class="text-xl text-indigo-300 font-medium tracking-widest uppercase">Project Presentation & Technical Report</p>
+            <div class="pt-12 border-t border-indigo-800 flex justify-between items-center text-sm font-bold text-indigo-400">
+                <span>SOUTH AFRICA 2024</span>
+                <span>PHP & MYSQL ARCHITECTURE</span>
+            </div>
+        </div>
+
+        <div class="p-12 space-y-12">
+            <!-- Introduction -->
+            <section class="space-y-4">
+                <h2 class="text-2xl font-bold text-gray-900 border-l-4 border-indigo-600 pl-4">1. Project Overview</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    Pastimes is a sophisticated, responsive e-commerce platform designed to modernize the second-hand fashion industry in South Africa. Unlike generic marketplaces, Pastimes focuses on <strong>sustainability</strong> and <strong>high-end curation</strong>, localized with South African Rands (ZAR) and specialized categories such as the "Sneaker Vault."
+                </p>
+            </section>
+
+            <!-- Features -->
+            <section class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <h3 class="text-lg font-bold text-indigo-700">Login & Registration</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">
+                        Security is handled at the core. The registration system uses <strong>password_hash (Bcrypt)</strong> to ensure data integrity. Upon login, a secure session is initiated, granting users access to customized dashboards based on their roles (Buyer/Seller).
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-lg font-bold text-indigo-700">Dynamic Catalog</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">
+                        The shop features an <strong>advanced PHP query engine</strong>. Users can filter items by categories like Womenswear, Menswear, and Sneakers. Prices are dynamically formatted to ZAR, reflecting affordable thrift-market rates.
+                    </p>
+                </div>
+            </section>
+
+            <div class="page-break"></div>
+
+            <!-- Technical Stack -->
+            <section class="bg-gray-50 p-8 rounded-[2rem] space-y-6">
+                <h2 class="text-2xl font-bold text-gray-900">2. Technical Implementation</h2>
+                <div class="grid grid-cols-3 gap-6 text-center">
+                    <div class="space-y-2">
+                        <div class="text-indigo-600 font-black text-2xl">PHP 8.2</div>
+                        <div class="text-[10px] uppercase font-bold text-gray-400 tracking-tighter">Backend Logic</div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="text-indigo-600 font-black text-2xl">MySQL</div>
+                        <div class="text-[10px] uppercase font-bold text-gray-400 tracking-tighter">Data Storage</div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="text-indigo-600 font-black text-2xl">Tailwind</div>
+                        <div class="text-[10px] uppercase font-bold text-gray-400 tracking-tighter">UI Framework</div>
+                    </div>
+                </div>
+                <div class="space-y-4 pt-4">
+                    <h4 class="font-bold text-sm text-gray-700">Database Schema Integrity:</h4>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li class="flex items-center gap-2 italic">• Relational tables for Users, Products, and Orders.</li>
+                        <li class="flex items-center gap-2 italic">• Automated timestamping for new Listings.</li>
+                        <li class="flex items-center gap-2 italic">• Real-time price formatting handled via PHP <code>number_format</code>.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Interaction -->
+            <section class="space-y-4">
+                <h2 class="text-2xl font-bold text-gray-900 border-l-4 border-indigo-600 pl-4">3. Interactive Experience</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    To bridge the gap between static PHP and modern apps, we integrated <strong>JavaScript-based Toast Notifications</strong>. Users receive instant visual cues when items are added to their cart. Additionally, the <strong>Sustainability Tracker</strong> highlights the positive environmental impact (Water savings) for every piece of thrifted clothing.
+                </p>
+            </section>
+
+            <!-- Summary -->
+            <section class="pt-8 border-t border-gray-100 text-center">
+                <h3 class="text-xl font-black text-gray-900 uppercase tracking-widest">Built for the Future of Fashion</h3>
+                <p class="text-gray-400 text-sm mt-2">Scalable • Secure • Sustainable</p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Instructions Button (Don't appear in Print) -->
+    <div class="fixed bottom-8 right-8 no-print">
+        <button onclick="window.print()" class="bg-indigo-600 text-white px-8 py-4 rounded-full font-bold shadow-2xl hover:scale-105 transition-transform flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+            Save as PDF
+        </button>
+    </div>
+
+</body>
+</html>

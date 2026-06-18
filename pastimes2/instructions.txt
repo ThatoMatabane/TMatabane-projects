@@ -1,0 +1,20 @@
+/* instructions.txt */
+How to setup Pastimes Online Store on XAMPP:
+
+1. Open XAMPP Control Panel.
+2. Start Apache and MySQL.
+3. Click "Admin" next to MySQL to open phpMyAdmin.
+4. Create a new database named "pastimes_db".
+5. In the top tabs, click "Import" and select the provided "database.sql" file. Click "Go".
+6. Ensure you start BOTH Apache and MySQL in XAMPP.
+7. Open your browser and go to http://localhost/pastimes/index.php.
+
+TROUBLESHOOTING:
+- If you get "Connection Refused": Your MySQL is not running. Open XAMPP and click Start next to MySQL.
+- If you get "Unknown Database": You haven't imported the database.sql file in phpMyAdmin yet.
+- PHP Backend Architecture
+- MySQL Data Management
+- Responsive Design (Tailwind CSS)
+- Interactive UI (Lucide Icons)
+- Sustainable Fashion Dashboard
+- Peer-to-Peer Marketplace Layout
