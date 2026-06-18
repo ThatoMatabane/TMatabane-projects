@@ -1,0 +1,6 @@
+{
+  "name": "NPO Financial Compliance and Transparency Reporting System",
+  "description": "Secure role-based financial compliance and public transparency ledger for NPOs, featuring statutory reporting, live audit trails, and automated compliance reminders.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
