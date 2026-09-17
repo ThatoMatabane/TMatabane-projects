@@ -1,0 +1,36 @@
+OCEAN AMBER — POE PART 2 PROJECT REPORT
+============================================
+
+Project: Ocean Amber — Responsive Restaurant Website
+Assessment: POE Part 2 — Designing the Visuals: CSS Styling and Responsive Design
+Technologies: HTML5 and CSS3
+
+SUMMARY
+Ocean Amber is a fictional contemporary coastal restaurant website created to demonstrate CSS styling and responsive design. The design uses deep ocean navy, blue, cream and amber accents to establish a premium but welcoming visual identity.
+
+PART 2 IMPLEMENTATION
+• Created a shared external style.css and linked it to all pages.
+• Used element, class and pseudo-class selectors.
+• Used CSS Grid for major page structures.
+• Used Flexbox for navigation and component alignment.
+• Added :hover, :focus, :focus-visible and :checked interactions.
+• Added desktop, tablet, mobile and small-mobile breakpoints.
+• Used rem, em, %, clamp() and aspect-ratio for scalable layouts.
+• Added a CSS-only mobile navigation.
+• Added responsive reservation form styling.
+• Added prefers-reduced-motion accessibility support.
+
+PAGES
+index.html — Home
+menu.html — Menu
+about.html — Our Story
+contact.html — Reservations
+
+TESTING
+Navigation, stylesheet linking, desktop layout, mobile layout, hover states, form focus and responsive sizing were checked and marked as passing in the full report.
+
+REFERENCES
+MDN Web Docs (2026), CSS: https://developer.mozilla.org/en-US/docs/Web/CSS
+MDN Web Docs (2026), CSS Grid: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
+MDN Web Docs (2026), CSS Flexbox: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout
+W3C (2026), CSS: https://www.w3.org/Style/CSS/

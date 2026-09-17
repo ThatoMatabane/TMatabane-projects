@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Reserve a table at Ocean Amber or contact the restaurant.">
+<title>Reservations | Ocean Amber</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav-wrap">
+<a class="brand" href="index.html"><span class="brand-mark">OA</span><span><strong>Ocean Amber</strong><small>Coastal Dining</small></span></a>
+<input class="nav-toggle" type="checkbox" id="nav-toggle"><label class="nav-button" for="nav-toggle" aria-label="Open navigation"><span></span><span></span><span></span></label>
+<nav class="site-nav"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="about.html">Our Story</a><a class="active" href="contact.html">Reservations</a><a class="nav-cta" href="contact.html">Book a Table</a></nav>
+</div></header>
+<main>
+<section class="page-hero"><div class="container"><p class="eyebrow">Reservations</p><h1>Make the table<br><em>yours.</em></h1><p>Complete the form below to send a reservation request. For this academic prototype, submissions are demonstration-only.</p></div></section>
+<section class="section contact-section"><div class="container contact-grid">
+<div class="contact-details"><p class="eyebrow">Come and see us</p><h2>A little amber<br>waiting for you.</h2><div class="detail"><span>01</span><div><h3>Address</h3><p>18 Amber Way<br>Wonderboom South<br>Pretoria, South Africa</p></div></div><div class="detail"><span>02</span><div><h3>Reservations</h3><p>+27 12 555 0188<br>hello@oceanamber.co.za</p></div></div><div class="detail"><span>03</span><div><h3>Hours</h3><p>Tue–Thu 12:00–21:30<br>Fri–Sat 12:00–22:30<br>Sun 12:00–18:00</p></div></div></div>
+<form class="reservation-form" action="#" method="post">
+<div class="form-title"><p class="eyebrow">Table request</p><h2>Tell us your plans.</h2></div>
+<div class="form-row"><label>Full name<input type="text" name="name" placeholder="Your name" required></label><label>Email<input type="email" name="email" placeholder="you@example.com" required></label></div>
+<div class="form-row"><label>Date<input type="date" name="date" required></label><label>Time<select name="time" required><option value="">Select a time</option><option>12:30</option><option>14:00</option><option>18:00</option><option>19:30</option><option>20:30</option></select></label></div>
+<label>Guests<select name="guests"><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 guests</option><option>6+ guests</option></select></label>
+<label>Special request<textarea name="message" rows="5" placeholder="Celebration, dietary notes or anything we should know..."></textarea></label>
+<label class="check"><input type="checkbox" required> I understand this is a demonstration reservation form.</label>
+<button class="button button-primary full" type="submit">Request Reservation</button>
+</form>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-grid">
+<div><a class="brand footer-brand" href="index.html"><span class="brand-mark">OA</span><span><strong>Ocean Amber</strong><small>Coastal Dining</small></span></a><p>Contemporary coastal dining with a South African soul.</p></div>
+<div><h4>Explore</h4><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="about.html">Our Story</a></div>
+<div><h4>Visit</h4><p>18 Amber Way<br>Wonderboom South<br>Pretoria, South Africa</p></div>
+<div><h4>Hours</h4><p>Tue–Thu 12:00–21:30<br>Fri–Sat 12:00–22:30<br>Sun 12:00–18:00</p></div>
+</div><div class="container footer-bottom"><span>© 2026 Ocean Amber. Academic project.</span><span>Built for POE Part 2.</span></div></footer>
+</body></html>
